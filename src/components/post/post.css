@@ -1,0 +1,14 @@
+.post_thumbnail {
+    width: 300px;
+    height: 300px;
+}
+.post {
+    max-width: 500px;
+    max-height: 600px;
+    text-align: center;
+}
+.posts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
