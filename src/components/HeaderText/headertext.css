@@ -1,0 +1,39 @@
+.header_text-container {
+	/* height: 30vh; */
+	padding: 30px 0;
+	width: 100vw;
+
+	color: black;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+.header_wrapper-text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	max-width: 1280px;
+	margin: 0 auto;
+	text-align: center;
+	height: 100%;
+}
+.header_wrapper-text > *:is(h4, h5) {
+	font-size: 2rem;
+}
+.header_wrapper-text > *:is(h6) {
+	font-size: 1.2rem;
+	padding: 40px 0;
+}
+.header_wrapper-text > *:is(p) {
+	font-size: 1.2rem;
+	padding-bottom: 20px;
+}
+.link {
+	text-decoration: none;
+	color: rgba(5, 5, 5, 0.404);
+	transition: 0.3s;
+	text-transform: uppercase;
+}
+.link:hover {
+	color: black;
+	text-decoration: underline;
+}

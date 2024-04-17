@@ -1,14 +1,111 @@
 .post_thumbnail {
-    width: 300px;
-    height: 300px;
-}
-.post {
-    max-width: 500px;
-    max-height: 600px;
-    text-align: center;
+	width: 300px;
+	height: 300px;
 }
 .posts {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1280px;
+	margin: 0 auto;
+	flex-direction: row;
+	gap: 25px;
+	padding: 20px;
+	justify-content: center;
+	align-items: center;
+}
+/* .noStickyPost {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1280px;
+	margin: 0 auto;
+	gap: 25px;
+	padding: 20px;
+	justify-content: center;
+	align-items: center;
+} */
+.post {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+	width: 550px;
+	height: 350px;
+	text-align: center;
+	overflow: hidden;
+	text-decoration: none;
+	border: 0.5px solid black;
+	border-radius: 8px;
+	z-index: -1;
+}
+.post_title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+	width: 100%;
+	height: 40%;
+	margin: 0;
+	color: white;
+	z-index: 2;
+}
+.post_thumbnail {
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+}
+dt > img {
+	max-width: 400px;
+	max-height: 400px;
+}
+figure > img {
+	max-width: 600px;
+	max-height: 600px;
+}
+.posts_container {
+	text-decoration: none;
+}
+.paggination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+.title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.content {
+	font-size: 23px;
+	text-align: center;
+}
+.single_post {
+	max-width: 1280px;
+	margin: 0 auto;
+	/* margin-bottom: 10px; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	min-height: calc(100vh - 190px);
+}
+.single_post > .content img {
+	margin: 0 20px;
+	cursor: pointer;
+}
+.posts_more {
+	width: 100%;
+}
+.single_post > * {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }

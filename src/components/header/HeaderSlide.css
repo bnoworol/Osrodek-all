@@ -1,0 +1,28 @@
+.header_slide {
+	position: relative;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	background-color: #eee;
+}
+
+.header_slide .swiper {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.header_slide .swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #333;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.header_slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}

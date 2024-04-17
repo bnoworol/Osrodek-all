@@ -1,20 +1,133 @@
-#root {
+/* #root {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 	width: 100vw;
-}
+} */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 .header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	background-image: url('http://osrodek.lzs.info.pl/wp-content/themes/parquetry/images/maingraphic.png');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	object-fit: contain;
 	width: 100%;
 	height: 100vh;
+}
+.back {
+	background-color: rgba(0, 0, 0, 0.3);
+	z-index: 1;
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.header .header__logo {
+	max-width: 100%;
+	padding: 0 20px;
+}
+/* .header .header__text {
+	text-align: center;
+	text-transform: uppercase;
+} */
+/* .header__text-test {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+} */
+.header .header_content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+.header .header--text {
+	position: relative;
+	background-repeat: repeat;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+	-webkit-font-smoothing: antialiased;
+	text-transform: uppercase;
+
+	font-family: 'Anton', sans-serif;
+
+	font-style: bold;
+
+	-webkit-text-stroke: 1px white;
+}
+
+.header .name {
+	background-image: url('https://img.freepik.com/darmowe-zdjecie/plynna-marmurkowa-farba-tekstury-tla-malowanie-plynne-abstrakcyjna-tekstura-intensywna-mieszanka-kolorow-tapety_1258-90551.jpg?t=st=1709643896~exp=1709647496~hmac=a9047914e93478cae0dfcafefa32dd24c973d4804b3e90360041e951b8f0470f&w=1800');
+	font-family: 'bog_standardregular';
+	src: url('bogstand-webfont.woff2') format('woff2'), url('bogstand-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-size: 10rem;
+}
+.header .first {
+	background-image: url('https://img.freepik.com/darmowe-zdjecie/luksusowe-gladkie-zielone-gradientowe-abstrakcyjne-tlo-studyjne-pusty-pokoj-z-miejscem-na-tekst-i-obraz_1258-88714.jpg?t=st=1709640950~exp=1709644550~hmac=7225b6a69a3dbeceae5ac55d370145b187d187ab8870de75b5bc4590b401c0ff&w=826');
+	font-size: 5rem;
+	-webkit-text-stroke: 1px white;
+}
+.header .second {
+	background-image: url('https://img.freepik.com/darmowe-zdjecie/luksusowe-gladkie-zielone-gradientowe-abstrakcyjne-tlo-studyjne-pusty-pokoj-z-miejscem-na-tekst-i-obraz_1258-88714.jpg?t=st=1709640950~exp=1709644550~hmac=7225b6a69a3dbeceae5ac55d370145b187d187ab8870de75b5bc4590b401c0ff&w=826');
+	font-size: 3rem;
+	-webkit-text-stroke: 1px white;
+}
+
+.heartbeat {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+	border-radius: 50%;
+	/* border: 2px solid rgba(255, 255, 255, 0.6); */
+	background-color: rgba(255, 255, 255, 0.6);
+	animation: heartbeat 2s linear infinite both;
+	width: 150px;
+	height: 150px;
+	cursor: pointer;
+	color: #000;
+	text-decoration: none;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+@keyframes heartbeat {
+	from {
+		transform: scale(1);
+		transform-origin: center center;
+		animation-timing-function: ease-out;
+	}
+	10% {
+		transform: scale(0.91);
+		animation-timing-function: ease-in;
+	}
+	17% {
+		transform: scale(0.98);
+		animation-timing-function: ease-out;
+	}
+	33% {
+		transform: scale(0.87);
+		animation-timing-function: ease-in;
+	}
+	45% {
+		transform: scale(1);
+		animation-timing-function: ease-out;
+	}
 }

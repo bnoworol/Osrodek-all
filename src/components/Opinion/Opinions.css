@@ -1,0 +1,52 @@
+.Sliders {
+	position: relative;
+	height: 400px;
+	width: 100%;
+}
+.Sliders {
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 14px;
+	color: #000;
+	margin: 0;
+	padding: 0;
+	border-radius: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container-sliders .swiper {
+	width: 90%;
+	height: 90%;
+	margin: 20px 0;
+	border-radius: 8px;
+}
+.container-sliders .swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background-color: rgba(255, 255, 255, 0.6);
+	cursor: grab;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 8px;
+}
+
+.container-sliders .swiper-slide img {
+	display: block;
+	width: 25px;
+	height: 25px;
+    object-fit: cover;
+}
+.container-sliders {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+@media (max-width: 1286px) {
+	.Sliders {
+		width: 80%;
+	}
+}

@@ -1,4 +1,4 @@
-.nav {
+/* .nav {
 	position: fixed;
 	padding: 20px 20px;
 	top: 0;
@@ -9,4 +9,103 @@
 }
 .nav a {
 	padding: 20px 20px;
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+	font-weight: 900;
+} */
+
+.nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(255, 255, 255, 0.6);
+	/* background-color: transparent; */
+	width: 100%;
+	z-index: 10;
+	height: 60px;
+}
+.wrapper {
+	display: flex;
+	justify-content: start;
+	max-width: 1280px;
+	min-width: 800px;
+	margin: 0 auto;
+}
+.wrapper a {
+	padding: 0 15px;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	flex-direction: row;
+	text-decoration: none;
+	color: black;
+	transition: 0.3s;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 900;
+	position: relative;
+}
+
+.wrapper .nav_item::before {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 0;
+	height: 2px;
+	background-color: black;
+	transition: 0.3s;
+}
+.wrapper .nav_item::after {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	right: 50%;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 0;
+	height: 2px;
+	background-color: black;
+	transition: 0.3s;
+}
+/* .nav a {
+	
+}  */
+.nav a:hover::before,
+.nav a:hover::after {
+	width: 45%;
+}
+
+.hidden1 {
+	height: 0;
+	overflow: hidden;
+}
+.active1 {
+	/* display: flex; */
+	height: auto;
+}
+.positions-desktop {
+	transition: 0.3s;
+	background-color: rgba(255, 255, 255, 0.3);
+	position: absolute;
+	/* top: 60px; */
+	top: 44px;
+}
+.positions-mobile {
+	transition: 0.3s;
+	background-color: rgba(255, 255, 255, 0.3);
+	top: 60px;
+}
+.arrow_img--down {
+	transform: rotate(0deg);
+}
+.arrow_img--up {
+	transform: rotate(180deg);
 }

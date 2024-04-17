@@ -1,0 +1,11 @@
+.header_page {
+	width: 100vw;
+	height: 40vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #000;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}

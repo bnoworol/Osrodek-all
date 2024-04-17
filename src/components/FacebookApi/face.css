@@ -1,0 +1,15 @@
+.opinion-container-test:hover > .opinion_one {
+	animation-play-state: paused;
+}
+.animations {
+	animation: left linear infinite;
+	animation-duration: var(--animation-duration);
+}
+@keyframes left {
+	from {
+		left: 0;
+	}
+	to {
+		left: var(--main--translate);
+	}
+}

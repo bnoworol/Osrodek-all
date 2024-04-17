@@ -1,0 +1,23 @@
+.modal_container {
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	/* top: 440px; */
+	/* width: 300px;
+	height: 150px; */
+    top: 60px;
+	width: 87%;
+	height: 128px;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+.modal_container-text {
+	text-align: center;
+	padding: 20px;
+    font-size: 20px;
+}
+.hidden {
+	display: none;
+}
+.active {
+	display: flex;
+}
